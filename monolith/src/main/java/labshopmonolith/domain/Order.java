@@ -56,7 +56,7 @@ public class Order  {
         labshopmonolith.external.DecreaseStockCommand decreaseStockCommand = new labshopmonolith.external.DecreaseStockCommand();
         // mappings goes here
         MonolithApplication.applicationContext.getBean(labshopmonolith.external.InventoryService.class)
-            .decreaseStock(/* get???(), */ decreaseStockCommand);
+            .decreaseStock(getId(), decreaseStockCommand);
 
 
 
